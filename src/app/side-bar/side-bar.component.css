@@ -1,0 +1,14 @@
+.example-container {
+  width: 100px;
+  position: absolute;
+  height: 100%;
+  background-color: rgb(234, 236, 239);
+}
+.main-icon{
+    margin-bottom: 40%;
+}
+.example-sidenav-content {
+  display: flex;
+  text-align: center;
+  padding: 5%;
+}

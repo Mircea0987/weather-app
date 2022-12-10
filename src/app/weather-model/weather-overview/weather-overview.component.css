@@ -1,0 +1,28 @@
+.main-div{
+    margin-left: 10%;
+    position: absolute;
+}
+.test{
+    margin-top: 100%;
+}
+.float-left{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 50%;
+    left: 900%;
+
+}
+.img{
+    width: 100%;
+}
+@media(max-width:720px){
+    .main-div{
+        margin-left: 50%;
+    }
+    .float-left{
+        left: 0%;
+        top: 100%;
+    }
+       
+}
