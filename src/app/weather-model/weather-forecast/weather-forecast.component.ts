@@ -10,5 +10,7 @@ export class WeatherForecastComponent implements OnInit {
   @Input() weatherData: WeatherData;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.weatherData?.current?.air_quality?.co);
+  }
 }
