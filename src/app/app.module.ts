@@ -11,14 +11,24 @@ import { WeatherOverviewComponent } from './weather-model/weather-overview/weath
 import { WeatherTableComponent } from './weather-model/weather-table/weather-table.component';
 import { WeatherForecastComponent } from './weather-model/weather-forecast/weather-forecast.component';
 import { WeatherAirConditionComponent } from './weather-model/weather-air-condition/weather-air-condition.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, SideBarComponent, WeatherModelComponent, WeatherOverviewComponent, WeatherTableComponent, WeatherForecastComponent, WeatherAirConditionComponent],
+  declarations: [
+    AppComponent,
+    SideBarComponent,
+    WeatherModelComponent,
+    WeatherOverviewComponent,
+    WeatherTableComponent,
+    WeatherForecastComponent,
+    WeatherAirConditionComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
