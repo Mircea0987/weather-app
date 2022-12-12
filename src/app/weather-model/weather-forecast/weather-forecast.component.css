@@ -1,5 +1,9 @@
 .test{
     position: absolute;
-        left: 10%;
-        top: 40%;
+    left: 10%;
+    top: 30%;
+
+}
+.card{
+background-color: rgb(234, 236, 239);
 }

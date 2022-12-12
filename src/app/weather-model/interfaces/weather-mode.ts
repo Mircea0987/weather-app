@@ -3,6 +3,7 @@ export interface WeatherData {
   current: Current;
   forecast: Forecast;
 }
+
 export interface Location {
   name: string;
   region: string;
@@ -13,6 +14,7 @@ export interface Location {
   localtime_epoch: number;
   localtime: string;
 }
+
 export interface Current {
   last_updated_epoch: number;
   last_updated: string;
@@ -39,11 +41,13 @@ export interface Current {
   gust_kph: number;
   air_quality: AirQuality;
 }
+
 export interface Condition {
   text: string;
   icon: string;
   code: number;
 }
+
 export interface AirQuality {
   co: number;
   no2: number;
@@ -54,16 +58,19 @@ export interface AirQuality {
   'us-epa-index': number;
   'gb-defra-index': number;
 }
+
 export interface Forecast {
-  forecastday: ForecastdayEntity[];
+  forecastday: Forecastday[];
 }
-export interface ForecastdayEntity {
+
+export interface Forecastday {
   date: string;
   date_epoch: number;
   day: Day;
   astro: Astro;
-  hour?: HourEntity[] | null;
+  hour: Hour[];
 }
+
 export interface Day {
   maxtemp_c: number;
   maxtemp_f: number;
@@ -83,9 +90,16 @@ export interface Day {
   daily_chance_of_rain: number;
   daily_will_it_snow: number;
   daily_chance_of_snow: number;
-  condition: Condition;
+  condition: Condition2;
   uv: number;
 }
+
+export interface Condition2 {
+  text: string;
+  icon: string;
+  code: number;
+}
+
 export interface Astro {
   sunrise: string;
   sunset: string;
@@ -94,13 +108,14 @@ export interface Astro {
   moon_phase: string;
   moon_illumination: string;
 }
-export interface HourEntity {
+
+export interface Hour {
   time_epoch: number;
   time: string;
   temp_c: number;
   temp_f: number;
   is_day: number;
-  condition: Condition;
+  condition: Condition3;
   wind_mph: number;
   wind_kph: number;
   wind_degree: number;
@@ -128,4 +143,10 @@ export interface HourEntity {
   gust_mph: number;
   gust_kph: number;
   uv: number;
+}
+
+export interface Condition3 {
+  text: string;
+  icon: string;
+  code: number;
 }
