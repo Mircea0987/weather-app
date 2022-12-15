@@ -4,7 +4,10 @@
       <h1 class="card-title">Location data</h1>
       <div>
         <div>
-          <p>{{ weatherData.current.wind_mph }} wind</p>
+          <h1>{{ weatherData.location.region }}</h1>
+          <h1>{{ weatherData.location.country }}</h1>
+          <h1>{{ weatherData.location.localtime | date : "h:mm a" }}</h1>
+          <h1></h1>
         </div>
       </div>
     </div>

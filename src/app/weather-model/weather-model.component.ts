@@ -12,7 +12,7 @@ export class WeatherModelComponent implements OnInit {
 
   dataList: WeatherData;
   ngOnInit(): void {
-    this.weatherService.getData('Cluj-Napoca').subscribe((data: any) => {
+    this.weatherService.getData('Tolyatti').subscribe((data: any) => {
       this.dataList = data;
     });
   }

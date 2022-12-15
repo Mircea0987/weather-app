@@ -4,7 +4,10 @@
     <thead>
       <tr>
         <th scope="col">Date</th>
-        <th scope="col">Grade C</th>
+        <th scope="col">Average Grade C</th>
+        <th scope="col">Min temp C</th>
+        <th scope="col">Max temp C</th>
+        <th scope="col">Chance of rain</th>
         <th scope="col">Icon</th>
       </tr>
     </thead>
@@ -12,6 +15,9 @@
       <tr *ngFor="let weather of weatherData.forecast.forecastday">
         <td>{{ weather.date | date : "EEEE " }}</td>
         <td>{{ weather.day.avgtemp_c }}</td>
+        <td>{{ weather.day.mintemp_c }}</td>
+        <td>{{ weather.day.maxtemp_c }}</td>
+        <td>{{ weather.day.daily_chance_of_rain }} %</td>
         <td><img src="{{ weather.day.condition.icon }}" /></td>
       </tr>
       <tr></tr>
