@@ -1,15 +1,16 @@
-<div class="test mat-elevation-z9" *ngIf="weatherData">
-  <div class="card" style="width: 18rem">
-    <div class="card-body">
-      <h1 class="card-title">Location data</h1>
-      <div>
-        <div>
-          <h1>{{ weatherData.location.region }}</h1>
-          <h1>{{ weatherData.location.country }}</h1>
-          <h1>{{ weatherData.location.localtime | date : "h:mm a" }}</h1>
-          <h1></h1>
-        </div>
-      </div>
-    </div>
+<div class="test mat-elevation-z9 text-center" *ngIf="weatherData">
+  <div class="card-body">
+    <h1>Location data</h1>
+    <h1>{{ weatherData.location.region }}</h1>
+    <h1>
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAFZElEQVRoge2Za4hVVRTHf/NwRrkzqQklzJg9xh5KRVopWFZqHyqwTLLC6GViVowSRO8oxrAJH5HlByuIaCydjCQlTKM+WGiaOCqEmiUZPWwMnRkfqTOnD2vt9rn7nnPuOWfu5Qr1h829Z5211l57n73XWntt+B+h6APcCbQAe4AubXuUNlV5TmvcDuwFvDxtL3BbiWyMRBmwEGtoG9AIDAcy2kYAs4HtytMDzFfZ0wYLEOOOAzOB8gjecmCW8nrAq0W3LiZuxQ7iugRy12MHc0sR7EqEPsDPiDEzU8g/orI/AZUFtCsx7sDuCXc51QOtQIe2lcAwh6cC2KE6JhfV0jxYrkY0OvR64CC53uogUOfwztF3LUW1NA92qxHDHXqr0j9FDK8DVittucM7Qum7imqpgzOBFcARsme61uHrULp/9oco7ZDDW0vul9sK1BTY9iy8E9CpF9DpYaXX+2hhA6kJ0bmkwLZn4UftZDwS5Nr0+WqHb6XSVyODqQfWKK3V4b1K6dv1+VLELfcAE5CBTgCeV9ltiKf8BLgi7UCMh7lSn5fo84sO34VAO8GbvcHhfZbcL/CM0rqAUwF6TPsbuCHNQF5QBa/o81RsHHDdbx2ysQ9raw0YRBmyyT0k0TSoBDYpvRuZwMXA3cBI4DygWd9vTDOQiSq8Rp+rgT+VNjGFvrHYL9XPeXcGsuwyIbJmb3XF6egiYC6wCvgM+EiF1/t4mgNocbFKZRemkDXO45d8jPMIX58POwqPKf3aBIaMQjb0CeD8BHIGN2ufm6KYzsUmgouBSYhnmk1wKjFf+b9KYIjxYm8mkPFjnsoviGIyqYfrKsMwCIkP7qYNg5nNLmBwzD4MBiNOx3jFSWGM9ytDB/Jl4uIxldtPdFTuixx7PeDJBPoHAm9jU38P2ECukwAkO+1UpnsTdAKSyW5R2UURfE3Ks5NkZ3ezfE8BHyNBOfB0WYn4ZA94P0EHfoxENm83wYFqDHBSjRmbULcJvnPyMT6njPsQH54WJlK7ejLYbPnlFHpNtG+OYrqM6JlMggrgG+30XR99qdK2kK4cNBl7NAiFCUyvp+ggCA3YvTYduE//HwEuTqlzmOr4nZDiRhnWEywF+qfsyMUM1XkMOKr/Z/VSp6mZjQ9jaEIySTPiKTEVD0VSky5gHXCO874F6yo/SGRyMJ7GBt7QklM94q1M8eyhGIrXk526fO68zyCecCOFOfH1R+KU2fRR9bN/SzTHgQvyKDb7wLSO3loaA+OwR+215KlULlPG1/IoXUf0FykWbsKeVQZEMZpzwtY8Cocixncis+PukWJhLtnnolBksMsrch2WAEOQpdUDjI4jYFzm2UU0Kg2MQ1oWV2CnCowplkUpMBr5EkdJsIzfQAbShmyuUqMM+BqxqSmJ4CDspYyHuOVSwhTMfyNFTOoHPKEK/gKqCmpafFQBP6gdM3qjyNSeSrVfHtf+dyDZdWqY7DhuDlZI9EXyP4+IvRo3RnTrbykuLqchIWAzUlsLRNyBmGsDL6UxVUjlJM1ZZJT+rk3ZdxbMebkduDyh7FnAd1jvtxmZ5bhrfQr2eOHewyRGFXaftAPXxJQrB77wGeK/jtuFnBzzXYJWAN+qTEGusquQMozJwZq1TSd8yTyq/AeQCno18AC2ruUhbnUa4cu8DHhLeXcXYByAzM4inxH+9gdywdOIFDMGYiv1bpm1ArgH+N4n30bufXsGW/U8AdxVqIEYmBukp4APgV/JHdhJ/f0yQk8FUtnc55PboPrHYePXIeDGQg8iDA3Ag8B7PsM6iXc9Vo0U3g6QOyHbgEuKYG9s1CLBLAlqkK+8H0mJXkIG+d/BP6UrwesGhSxtAAAAAElFTkSuQmCC"
+      />{{ weatherData.location.country }}
+    </h1>
+    <h1>
+      <img
+        src="data:image/png;base64,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"
+      />{{ weatherData.location.localtime | date : "h:mm a" }}
+    </h1>
   </div>
 </div>

@@ -12,6 +12,8 @@ import { WeatherTableComponent } from './weather-model/weather-table/weather-tab
 import { WeatherForecastComponent } from './weather-model/weather-forecast/weather-forecast.component';
 import { WeatherAirConditionComponent } from './weather-model/weather-air-condition/weather-air-condition.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchBarComponent } from './weather-model/search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,15 @@ import { HttpClientModule } from '@angular/common/http';
     WeatherTableComponent,
     WeatherForecastComponent,
     WeatherAirConditionComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+
     HttpClientModule,
   ],
   providers: [],
