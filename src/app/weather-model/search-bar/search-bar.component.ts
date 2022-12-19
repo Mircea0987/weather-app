@@ -10,9 +10,10 @@ export class SearchBarComponent implements OnInit {
 
   @Output() newEvent = new EventEmitter();
 
-  name: any = 'Paris';
+  name: any = 'San Francisco';
   test() {
     this.newEvent.emit(this.name);
+    this.name = '';
   }
 
   ngOnInit(): void {

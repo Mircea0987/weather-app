@@ -1,0 +1,22 @@
+.main-div{
+    padding-top: 5%;
+    margin-left: 10%;
+    width: 100%;
+    position: absolute;
+}
+ul > li{
+    list-style: none;
+    padding: 5%;
+    background-color: rgb(234, 236, 239);
+    border-radius: 24px;
+    color: black;
+}
+ul{
+    width: 50%;
+}
+.text-end{
+    display:inline;
+}
+.localtime{
+    margin-left: 9%;
+}

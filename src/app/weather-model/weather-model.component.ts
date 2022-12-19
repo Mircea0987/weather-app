@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { map, Subscription } from 'rxjs';
 import { WeatherData } from './interfaces/weather-mode';
 import { WeatherService } from './services/weather.service';
 
@@ -9,8 +10,6 @@ import { WeatherService } from './services/weather.service';
 })
 export class WeatherModelComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
-
-  @Input() name: WeatherData;
 
   test(value: string) {
     this.weatherService.getData(value).subscribe((data: any) => {

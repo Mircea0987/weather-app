@@ -1,0 +1,15 @@
+<div class="main-div" *ngIf="weatherData">
+  <ul>
+    <li>
+      <img src="{{ weatherData.current.condition.icon }}" />{{
+        weatherData.location.name
+      }}
+      <p class="localtime">
+        {{ weatherData.location.localtime | date : "h:mm a" }}
+      </p>
+      <div class="d-flex justify-content-end">
+        <p>{{ weatherData.current.temp_c }}℃</p>
+      </div>
+    </li>
+  </ul>
+</div>
